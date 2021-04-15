@@ -116,14 +116,14 @@ p{
 
 @media (max-width:540px) {
   [class*="row-"]{
-    flex: 80%;
+    flex: 100%;
   } 
 }
 
 
 @media (min-width:540px) {
   [class*="row-"]{
-    flex: 80%;
+    flex: 100%;
   } 
 }
 

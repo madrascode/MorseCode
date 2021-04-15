@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
 
 *{
@@ -51,7 +52,7 @@ main{
 [class*="row-"]{
   flex-basis: 20%;
   background: rgba(222, 228, 173, 0.966);
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,14 +117,17 @@ p{
 
 @media (max-width:540px) {
   [class*="row-"]{
-    flex: 100%;
+    flex: 80%;
   } 
+  main{
+    padding: 0;
+  }
 }
 
 
 @media (min-width:540px) {
   [class*="row-"]{
-    flex: 100%;
+    flex: 80%;
   } 
 }
 
@@ -138,5 +142,4 @@ p{
     flex: 20%;
   } 
 }
-
 

@@ -50,9 +50,10 @@ main{
 }
 
 [class*="row-"]{
-  flex-basis: 20%;
+  flex-basis: auto;
+  overflow: auto;
   background: rgba(222, 228, 173, 0.966);
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,12 +88,11 @@ button{
 
 
 
-
-
 img{
   max-width: 100%;
   height: auto;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 .output{
   background: white;
@@ -127,19 +127,19 @@ p{
 
 @media (min-width:540px) {
   [class*="row-"]{
-    flex: 80%;
+    flex: auto;
   } 
 }
 
 @media (min-width:840px) {
   [class*="row-"]{
-    flex: 40%;
+    flex: auto;
   } 
 }
 
 @media (min-width:1240px) {
   [class*="row-"]{
-    flex: 20%;
+    flex: auto;
   } 
 }
 

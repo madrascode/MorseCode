@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  /* width: 100%; */
+  box-sizing: border-box;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: large;
+}
+
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header{
+  height: 50px;  
+  background: darksalmon;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+}
+
+
+footer{
+  height: 50px;  
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20px 20px 0 0;
+  background: darksalmon;
+  bottom: 0;
+}
+
+
+main{
+  background: cornsilk;
+  /* height: 85vh; */
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+[class*="row-"]{
+  flex-basis: 20%;
+  background: rgba(222, 228, 173, 0.966);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1rem;
+  /* border: 1px dashed burlywood; */
+  padding: 1rem;
+}
+
+.buttonclass{
+  background: rgb(163, 161, 161);
+}
+
+
+textarea{
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 20px;
+  width: 80%;
+  display: block;
+}
+
+
+button{
+  display: block;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  box-shadow: 1px 3px;
+}
+
+
+
+
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.output{
+  background: white;
+  height: 80%;
+  width: 90%;
+  overflow: auto;
+  border-radius: 20px;
+  border: 2px solid;
+  padding: 1rem;
+}
+
+p{
+  font-weight: bold;
+}
+
+.row- p{
+  /* margin: 1rem; */
+  padding: 1rem;
+  /* background: cornflowerblue; */
+}
+
+
+@media (max-width:540px) {
+  [class*="row-"]{
+    flex: 80%;
+  } 
+}
+
+
+@media (min-width:540px) {
+  [class*="row-"]{
+    flex: 80%;
+  } 
+}
+
+@media (min-width:840px) {
+  [class*="row-"]{
+    flex: 40%;
+  } 
+}
+
+@media (min-width:1240px) {
+  [class*="row-"]{
+    flex: 20%;
+  } 
+}
+
+
